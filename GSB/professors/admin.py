@@ -1,8 +1,8 @@
 from django.contrib import admin
 from .models import *
+
+
 # Register your models here.
-
-
 @admin.register(Tblcontacts)
 class TblcontactsAdmin(admin.ModelAdmin):
     list_display = ('contactsid', 'aastid', 'atitle', 'aname', 'etitle', 'ename', 'esurname', 'asurname', 'email1',
