@@ -366,6 +366,8 @@ class StudentsTbl(models.Model):
     class Meta:
         managed = False
         db_table = 'students_tbl'
+        verbose_name = 'Student'
+        verbose_name_plural = 'Students'
 
 
 class Tblassigntoreq(models.Model):

@@ -12,3 +12,4 @@ class TblcontactsAdmin(admin.ModelAdmin):
     list_per_page = 25
     search_fields = ['phone1', 'esurname', 'asurname', 'email1']
     ordering = ['esurname', 'asurname']
+
