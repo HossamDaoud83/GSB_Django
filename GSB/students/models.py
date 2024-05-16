@@ -141,6 +141,8 @@ class Categorylist(models.Model):
     class Meta:
         managed = False
         db_table = 'categorylist'
+        verbose_name = 'Category List'
+        verbose_name_plural = 'Categories List'
 
     def __str__(self):
         return self.category
@@ -153,6 +155,8 @@ class Collegelist(models.Model):
     class Meta:
         managed = False
         db_table = 'collegelist'
+        verbose_name = 'College List'
+        verbose_name_plural = 'Colleges List'
 
 
 class Companylist(models.Model):
@@ -240,6 +244,8 @@ class Majorlist(models.Model):
     class Meta:
         managed = False
         db_table = 'majorlist'
+        verbose_name = 'Major List'
+        verbose_name_plural = 'Majors List'
 
     def __str__(self):
         return self.group
@@ -251,6 +257,8 @@ class Nationalitylist(models.Model):
     class Meta:
         managed = False
         db_table = 'nationalitylist'
+        verbose_name = 'Nationality List'
+        verbose_name_plural = 'Nationalities List'
 
     def __str__(self):
         return self.nationality
@@ -273,8 +281,8 @@ class Programlist(models.Model):
     class Meta:
         managed = False
         db_table = 'programlist'
-        verbose_name = 'Program'
-        verbose_name_plural = 'Program'
+        verbose_name = 'Program List'
+        verbose_name_plural = 'Program List'
 
     def __str__(self):
         return self.programname
@@ -307,6 +315,8 @@ class Studentaffairslist(models.Model):
     class Meta:
         managed = False
         db_table = 'studentaffairslist'
+        verbose_name = 'Student Affairs List'
+        verbose_name_plural = 'Student Affairs List'
 
     def __str__(self):
         return self.studentaffairs
@@ -391,8 +401,8 @@ class StudentsTbl(models.Model):
     class Meta:
         managed = False
         db_table = 'students_tbl'
-        verbose_name = 'Student'
-        verbose_name_plural = 'Students'
+        verbose_name = 'Student Table'
+        verbose_name_plural = 'Students Table'
 
 
 class Tblassigntoreq(models.Model):
@@ -420,6 +430,8 @@ class Tblcitylist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblcitylist'
+        verbose_name = 'City List'
+        verbose_name_plural = 'Cities List'
 
     def __str__(self):
         return self.cityname
@@ -680,6 +692,8 @@ class Tblsemesterslist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsemesterslist'
+        verbose_name = 'Semester List'
+        verbose_name_plural = 'Semesters List'
 
     def __str__(self):
         return self.semester
@@ -718,6 +732,8 @@ class Tblstatuslist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblstatuslist'
+        verbose_name = 'Status List'
+        verbose_name_plural = 'Status List'
 
     def __str__(self):
         return self.statuslist
@@ -756,6 +772,8 @@ class Tblsubjectslist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsubjectslist'
+        verbose_name = 'Subject List'
+        verbose_name_plural = 'Subjects List'
 
     def __str__(self):
         return self.subjectname

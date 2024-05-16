@@ -131,6 +131,8 @@ class Tblcategorylist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblcategorylist'
+        verbose_name = 'Category List'
+        verbose_name_plural = 'Categories List'
 
     def __str__(self):
         return self.categoryname
@@ -143,6 +145,8 @@ class Tblcitylist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblcitylist'
+        verbose_name = 'City List'
+        verbose_name_plural = 'Cities List'
 
     def __str__(self):
         return self.cityname
@@ -221,6 +225,8 @@ class Tbleducode(models.Model):
     class Meta:
         managed = False
         db_table = 'tbleducode'
+        verbose_name = 'Education Code'
+        verbose_name_plural = 'Education Codes'
 
 
 class Tblevaluation(models.Model):
@@ -315,6 +321,8 @@ class Tblmajorlist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblmajorlist'
+        verbose_name = 'Major List'
+        verbose_name_plural = 'Majors List'
 
     def __str__(self):
         return self.majorname
@@ -348,6 +356,8 @@ class Tblprogramlist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblprogramlist'
+        verbose_name = 'Program List'
+        verbose_name_plural = 'Programs List'
 
     def __str__(self):
         return self.programname
@@ -402,6 +412,8 @@ class Tblsemesterlist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsemesterlist'
+        verbose_name = 'Semester List'
+        verbose_name_plural = 'Semesters List'
 
     def __str__(self):
         return self.semestername
@@ -427,6 +439,8 @@ class Tblsubjectslist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsubjectslist'
+        verbose_name = 'Subject List'
+        verbose_name_plural = 'Subjects List'
 
     def __str__(self):
         return self.subjectname
@@ -489,6 +503,8 @@ class Tbltimetabletypelist(models.Model):
     class Meta:
         managed = False
         db_table = 'tbltimetabletypelist'
+        verbose_name = 'Timetable Type'
+        verbose_name_plural = 'Timetable Types'
 
     def __str__(self):
         return self.timetabletype
