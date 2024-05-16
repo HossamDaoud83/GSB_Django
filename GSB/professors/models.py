@@ -69,6 +69,11 @@ class Tblacademicdegreelist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblacademicdegreelist'
+        verbose_name = 'Academic_Degree'
+        verbose_name_plural = 'Academic_Degrees'
+
+    def __str__(self):
+        return self.academicdegree
 
 
 class Tblacademicmajorlist(models.Model):
@@ -78,6 +83,9 @@ class Tblacademicmajorlist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblacademicmajorlist'
+
+    def __str__(self):
+        return self.academicmajor
 
 
 class Tblattendance(models.Model):
@@ -124,6 +132,9 @@ class Tblcategorylist(models.Model):
         managed = False
         db_table = 'tblcategorylist'
 
+    def __str__(self):
+        return self.categoryname
+
 
 class Tblcitylist(models.Model):
     citylistid = models.AutoField(db_column='CityListID', primary_key=True)  # Field name made lowercase.
@@ -132,6 +143,9 @@ class Tblcitylist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblcitylist'
+
+    def __str__(self):
+        return self.cityname
 
 
 class Tblcontacts(models.Model):
@@ -290,6 +304,9 @@ class Tblgrouplist(models.Model):
         managed = False
         db_table = 'tblgrouplist'
 
+    def __str__(self):
+        return self.groupname
+
 
 class Tblmajorlist(models.Model):
     majorlistid = models.AutoField(db_column='MajorListID', primary_key=True)  # Field name made lowercase.
@@ -299,6 +316,9 @@ class Tblmajorlist(models.Model):
         managed = False
         db_table = 'tblmajorlist'
 
+    def __str__(self):
+        return self.majorname
+
 
 class Tblpaymentdegreelist(models.Model):
     paymentdegreeid = models.AutoField(db_column='PaymentDegreeID', primary_key=True)  # Field name made lowercase.
@@ -307,6 +327,9 @@ class Tblpaymentdegreelist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblpaymentdegreelist'
+
+    def __str__(self):
+        return self.paymentdegree
 
 
 class Tblperioudlist(models.Model):
@@ -325,6 +348,9 @@ class Tblprogramlist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblprogramlist'
+
+    def __str__(self):
+        return self.programname
 
 
 class TblresultMissing(models.Model):
@@ -365,6 +391,9 @@ class Tblroomlist(models.Model):
         managed = False
         db_table = 'tblroomlist'
 
+    def __str__(self):
+        return self.roomname
+
 
 class Tblsemesterlist(models.Model):
     semesterlistid = models.AutoField(db_column='SemesterListID', primary_key=True)  # Field name made lowercase.
@@ -373,6 +402,9 @@ class Tblsemesterlist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsemesterlist'
+
+    def __str__(self):
+        return self.semestername
 
 
 class Tblsponsorlist(models.Model):
@@ -395,6 +427,9 @@ class Tblsubjectslist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsubjectslist'
+
+    def __str__(self):
+        return self.subjectname
 
 
 class Tbltimetable(models.Model):
@@ -455,6 +490,9 @@ class Tbltimetabletypelist(models.Model):
         managed = False
         db_table = 'tbltimetabletypelist'
 
+    def __str__(self):
+        return self.timetabletype
+
 
 class Tblweeklist(models.Model):
     weeklistid = models.AutoField(db_column='WeekListID', primary_key=True)  # Field name made lowercase.
@@ -463,6 +501,9 @@ class Tblweeklist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblweeklist'
+
+    def __str__(self):
+        return self.weekname
 
 
 class Tbusers(models.Model):

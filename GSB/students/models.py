@@ -142,6 +142,9 @@ class Categorylist(models.Model):
         managed = False
         db_table = 'categorylist'
 
+    def __str__(self):
+        return self.category
+
 
 class Collegelist(models.Model):
     collegeid = models.AutoField(db_column='CollegeID', primary_key=True)  # Field name made lowercase.
@@ -169,6 +172,9 @@ class Discountlist(models.Model):
         managed = False
         db_table = 'discountlist'
 
+    def __str__(self):
+        return self.discount
+
 
 class Discsectorlist(models.Model):
     discsectorid = models.AutoField(db_column='DiscSectorID', primary_key=True)  # Field name made lowercase.
@@ -177,6 +183,9 @@ class Discsectorlist(models.Model):
     class Meta:
         managed = False
         db_table = 'discsectorlist'
+
+    def __str__(self):
+        return self.discsector
 
 
 class GraduationTbl(models.Model):
@@ -211,6 +220,9 @@ class Grouplist(models.Model):
         managed = False
         db_table = 'grouplist'
 
+    def __str__(self):
+        return self.group
+
 
 class Jobfieldlist(models.Model):
     jobfieldid = models.AutoField(db_column='JobFieldID', primary_key=True)  # Field name made lowercase.
@@ -229,6 +241,8 @@ class Majorlist(models.Model):
         managed = False
         db_table = 'majorlist'
 
+    def __str__(self):
+        return self.group
 
 class Nationalitylist(models.Model):
     nationalid = models.AutoField(db_column='NationalID', primary_key=True)  # Field name made lowercase.
@@ -237,6 +251,9 @@ class Nationalitylist(models.Model):
     class Meta:
         managed = False
         db_table = 'nationalitylist'
+
+    def __str__(self):
+        return self.nationality
 
 
 class Professorslist(models.Model):
@@ -256,6 +273,11 @@ class Programlist(models.Model):
     class Meta:
         managed = False
         db_table = 'programlist'
+        verbose_name = 'Program'
+        verbose_name_plural = 'Program'
+
+    def __str__(self):
+        return self.programname
 
 
 class Staffevaluation(models.Model):
@@ -285,6 +307,9 @@ class Studentaffairslist(models.Model):
     class Meta:
         managed = False
         db_table = 'studentaffairslist'
+
+    def __str__(self):
+        return self.studentaffairs
 
 
 class StudentsTbl(models.Model):
@@ -395,6 +420,9 @@ class Tblcitylist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblcitylist'
+
+    def __str__(self):
+        return self.cityname
 
 
 class Tblcompexamanswers(models.Model):
@@ -653,6 +681,9 @@ class Tblsemesterslist(models.Model):
         managed = False
         db_table = 'tblsemesterslist'
 
+    def __str__(self):
+        return self.semester
+
 
 class Tblservicespayment(models.Model):
     idserv = models.AutoField(db_column='IDServ', primary_key=True)  # Field name made lowercase.
@@ -688,6 +719,9 @@ class Tblstatuslist(models.Model):
         managed = False
         db_table = 'tblstatuslist'
 
+    def __str__(self):
+        return self.statuslist
+
 
 class Tblstudentsreq(models.Model):
     idrequest = models.AutoField(db_column='IDRequest', primary_key=True)  # Field name made lowercase.
@@ -722,6 +756,9 @@ class Tblsubjectslist(models.Model):
     class Meta:
         managed = False
         db_table = 'tblsubjectslist'
+
+    def __str__(self):
+        return self.subjectname
 
 
 class Tblsubjectsregister(models.Model):
