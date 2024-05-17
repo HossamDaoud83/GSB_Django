@@ -142,7 +142,7 @@ class Categorylist(models.Model):
         managed = False
         db_table = 'categorylist'
         verbose_name = 'Category List'
-        verbose_name_plural = 'Categories List'
+        verbose_name_plural = 'Category List'
 
     def __str__(self):
         return self.category
